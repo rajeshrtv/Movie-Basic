@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/login.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <title>Login</title>
+</head>
+<body>
+    <header>
+        <a href="/index.html" class="logo"><img src="/logo.png" alt=""></a>
+
+        <nav>
+            <a href="/index.html" class="active">Home</a>
+            <a href="/movies.html">Movies</a>
+            <a href="/tv.html">TV Series</a>
+            <a href="/doc.html">Documentries</a>
+            <a href="/about.html">About Us</a>
+            <a href="/login.html">Login</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Login</h2>
+        <form>
+          <label for="username">Username</label>
+          <input type="text" name="username" onfocus="this.value=''"/>
+          <label for="password">Password</label>
+          <input type="password" name="password" onfocus="this.value=''"/>
+          <input type="submit" class="login-btn" value="Sign In" onClick="loginPage(this.form)"/>
+        </form>
+      </div>
+
+      <footer>
+        <div class="foot">
+          <p style="font-size: 15px;">Copyright © MovieVerse. All rights reserved.</p>
+        </div>
+      </footer>   
+      
+      <script>
+        function loginPage(form) {
+          if (form.username.value == "movie") {
+            if (form.password.value == "verse") {
+              location = "logout.html"
+            } else {
+              alert("Incorrect detail Password")
+            }
+          } else {
+            alert("Incorrect detail Username")
+          }
+        }
+      </script> 
+</body>
+</html>

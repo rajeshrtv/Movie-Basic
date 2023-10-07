@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>MoviesVerse - Movies Verse</title>
+</head>
+
+<body>
+  <header>
+    <a href="#" class="logo"><img src="/logo.png" alt=""></a>
+
+    <nav>
+      <a href="#home" class="active">Home</a>
+      <a href="#movies">Movies</a>
+      <a href="#tvseries">TV Series</a>
+      <a href="#documentry">Documentries</a>
+      <a href="#about">About Us</a>
+      <a href="#login">Login</a>
+    </nav>
+  </header>
+
+  <section id="home">
+    <div class="card1">
+      <img src="/pirates.jpg" style="width:250px; height: 350px;">
+      <a href="/pirates.html"><button>Pirates of Caribbean</button></a>
+    </div>
+
+    <div class="card2">
+      <img src="/flash.jpg" style="width:250px; height: 350px;">
+      <p><a href="/flash.html"><button>The Flash</button></a></p>
+    </div>
+
+    <div class="card3">
+      <img src="/star.jpg" style="width:250px; height: 350px;">
+      <p><a href="/star.html"><button>The Force Awakens</button></a></p>
+    </div>
+
+  </section>
+  <section id="movies">
+    <div class="card4">
+      <img src="/iron.jpg" style="width:250px; height: 350px;">
+      <p><a href="/iron.html"><button>Iron Man</button></a></p>
+    </div>
+
+    <div class="card5">
+      <img src="/batman.jpg" style="width:250px; height: 350px;">
+      <p><a href="/batman.html"><button>Batman VS Superman</button></a></p>
+    </div>
+
+    <div class="card6">
+      <img src="/captain.jpg" style="width:250px; height: 350px;">
+      <p><a href="/captain.html"><button>Captain America</button></a></p>
+    </div>
+  </section>
+  <section id="tvseries">
+    <div class="card7">
+      <img src="/andor.jpeg" style="width:250px; height: 350px;">
+      <p><a href="/andor.html"><button>Andor</button></a></p>
+    </div>
+
+    <div class="card8">
+      <img src="/stranger.jpeg" style="width:250px; height: 350px;">
+      <p><a href="/stranger.html"><button>Stranger Things</button></a></p>
+    </div>
+
+    <div class="card9">
+      <img src="/wednesday.jpeg" style="width:250px; height: 350px;">
+      <p><a href="/wednesday.html"><button>Wednesday</button></a></p>
+    </div>
+  </section>
+  <section id="documentry">
+    <div class="card10">
+      <img src="/planet.jpg" style="width:250px; height: 350px;">
+      <p><a href="/blue.html"><button>Blue Planet</button></a></p>
+    </div>
+
+    <div class="card11">
+      <img src="/tinder.jpg" style="width:250px; height: 350px;">
+      <p><a href="/tinder.html"><button>Tinder Swindler</button></a></p>
+    </div>
+
+    <div class="card12">
+      <img src="/elephant.jpeg" style="width:250px; height: 350px;">
+      <p><a href="/elephant.html"><button>Elephant Whisperers</button></a></p>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="main-content">
+      <div class="main-header"><button style="pointer-events: none;">About Us</button></div>
+
+      <div class="page-content">MovieVerse is a multimedia database that offers exclusive and original content from
+        leading Producers and Publishers. <br> It’s a one-stop website for some of the best Movies, TV Shows and
+        Documentaries. The platform lays focus on <br> Exclusive Original Content. MovieVerse will offer consumers more
+        than 10 original shows. Search your favourite <br> content on the go anytime, anywhere.</div>
+      <br>
+      <br>
+      <div class="main-header"><button style="pointer-events: none;">Support</button></div>
+      <div class="page-content">If you have any queries, suggestion, or operational/ technical issues, please reach out
+        to us at <a href="mailto:rajesh.rathava.bca@gmail.com"
+          style="color: #0ef; font-size: 16px;">rajesh.rathava.bca@gmail.com</a></div>
+    </div>
+    </div>
+  </section>
+  <section id="login">
+    <div class="container">
+      <h2>Login</h2>
+      <form>
+        <label for="username">Username</label>
+        <input type="text" name="username" onfocus="this.value=''" />
+        <label for="password">Password</label>
+        <input type="password" name="password" onfocus="this.value=''" />
+        <input type="submit" class="login-btn" value="Sign In" onClick="loginPage(this.form)"/>
+      </form>
+    </div>
+    <script>
+
+
+      function loginPage(form) {
+        if (form.username.value == "movie") {
+          if (form.password.value == "verse") {
+            location = "logout.html"
+          } else {
+            alert("Incorrect detail Password")
+          }
+        } else {
+          alert("Incorrect detail Username")
+        }
+      }
+    </script>
+  </section>
+
+  <footer>
+    <div class="foot">
+      <p style="font-size: 15px;">Copyright © MovieVerse. All rights reserved.</p>
+    </div>
+  </footer>
+
+
+
+</body>
+
+</html>

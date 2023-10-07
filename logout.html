@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/logout.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <title>Sign Out</title>
+</head>
+<body>
+    <header>
+        <a href="/index.html" class="logo"><img src="/logo.png" alt=""></a>
+
+        <nav>
+            <a href="/index.html" class="active">Home</a>
+            <a href="/tv.html">TV Series</a>
+            <a href="/movies.html">Movies</a>
+            <a href="/doc.html">Documentries</a>
+            <a href="/about.html">About Us</a>
+            <a href="/login.html">Login</a>
+        </nav>
+    </header>
+
+    <div class="container" style="height: 250px;">
+        <h2>Welcome</h2>
+        <p>
+          Your are successfully login
+        </p>
+        <script>
+            const logoutBtn = document.querySelector(".logout-btn")
+
+            logoutBtn.addEventListener("click",()=>{
+            window.location.replace("/login.html")
+            })
+        </script>
+      </div>
+      
+      <footer>
+        <div class="foot">
+          <p style="font-size: 15px;">Copyright © MovieVerse. All rights reserved.</p>
+        </div>
+      </footer>  
+  
+</body>
+</html>
